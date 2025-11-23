@@ -24,3 +24,29 @@ body {
 .card-title {
     color: white !important;
 }
+
+.row.my-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.row.my-5 .card {
+    flex: 1 1 calc(33% - 1rem);
+    max-width: calc(33% - 1rem);
+}
+
+@media (max-width: 992px) {
+    .row.my-5 .card {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .row.my-5 .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
