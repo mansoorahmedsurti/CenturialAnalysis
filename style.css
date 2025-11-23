@@ -31,13 +31,20 @@ body {
   transform: scale(1.05);
 }
 
+#navbarNav>ul>li>a:hover{
+  color: #0d6efd !important;   
+}
 
 nav {
   background-color: #0d6efd;
-  color: white;
+  /* color: #0d6efd; */
   padding: 1rem;
   font-weight: bold;
-  text-align: center;
+  text-align: center; 
+}
+
+.dropdown-menu {
+ z-index: 1051 !important;
 }
 
 .card {
@@ -75,3 +82,4 @@ img.card-img-top {
   width: 75px;
   height: 55px;
 }
+
