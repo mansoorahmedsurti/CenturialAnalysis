@@ -2,16 +2,13 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     position: relative;
-    background: linear-gradient(
-        to right,
-        rgba(59, 130, 246, 0.8),
-        rgba(148, 163, 184, 1)
-    );
-    color: black;
+    background: #1E40AF;
+    color: white;
     padding: 60px 0 30px;
-    border-top-left-radius: 105px;
+    border-top-left-radius: 50px;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 1.6;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
 }
 
 .row {
@@ -21,46 +18,40 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .row2 {
     width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    color:grey;
-    font-size: 12px
+    margin: 20px auto 0;
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
 }
 
 .col {
     flex-basis: 25%;
     padding: 10px;
-}
-
-.col p {
-    margin: 4px 0;
+    min-width: 200px;
 }
 
 .col h3 {
-    width: fit-content;
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #f3f4f6;
 }
 
-.map{
-  width: 100%;
-  height: 150px;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-    
+.col p,
+.col .email-id,
+.col .number {
+    margin: 3px 0;
+    font-size: 0.9rem;
 }
 
-.email-id {
-    display: inline-block;
-    border-bottom: 1px solid #ccc;
-    margin: 2px 0;
+ul {
+    padding: 0;
 }
 
 ul li {
@@ -71,6 +62,35 @@ ul li {
 ul li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #f3f4f6;
+    transition: color 0.3s;
 }
 
+ul li a:hover {
+    color: #60a5fa;
+}
+
+.map {
+    width: 100%;
+    height: 180px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .map {
+        height: 200px;
+    }
+}
