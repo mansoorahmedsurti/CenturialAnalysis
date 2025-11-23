@@ -1,0 +1,23 @@
+
+#navbarNav>ul>li>a:hover{
+  color: #0d6efd !important;   
+}
+
+nav {
+  background-color: #0d6efd;
+  /* color: #0d6efd; */
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.dropdown-menu {
+  position: absolute;
+ z-index: 9999 !important;
+}
+
+.navbar{
+  position: relative;
+  z-index: 10000;
+}
+
